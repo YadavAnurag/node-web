@@ -48,6 +48,13 @@ app.get('/about', (req, res)=>{
     });
 });
 
+app.get('/project', (req, res)=>{
+    res.render('project.hbs',{
+        pageTitle:'My Project',
+        welcomeMessage:'Welcome to my Project Section'
+    });
+});
+
 app.get('/bad', (req, res)=>{
     res.send({
         errorMessage:'Unable to handle /bad resource'
